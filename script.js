@@ -19,7 +19,7 @@ $(document).ready(function () {
     ];
     
     function play(e){
-        if(!e.hasClass('nogo')){
+        if(!e.hasClass('nogo') || turns == 0){
             message.empty().removeClass();
             player = (turns == 0 || previousPlayer == 2)?'1':'2';
             //attempts.push(e.attr('id'));
